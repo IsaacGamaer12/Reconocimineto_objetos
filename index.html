@@ -1,0 +1,62 @@
+ 
+<html>
+  <head>
+    <title>Reconocimiento de imagen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+
+      <h1>IDENTIFICADOR</h1>
+
+      <br><br>
+
+      <p style="font-size: 22px;">El modelo está entrenado para identificar los siguientes objetos: </p>
+
+        <label>Reloj</label>
+        <hr>
+        <label>Pluma</label>
+        <hr>
+        <label>Mouse</label>
+        <hr>
+        <label>Cuaderno</label>
+        <hr>
+        <label>Color</label>
+        <hr>
+
+      <label>Vista de la cámara: </label>
+
+      <br><br>
+      <div id="camera"></div>
+      <br><br>
+      <div id="resultado"></div>
+      <br><br>
+      <button onclick="take_photo()">Capturar Imagen</button>
+      <br><br>
+      <button onclick="check()">Identificar Imagen</button>
+
+      <p style="font-size: 22px;">Objeto:  </p>
+      <p id="result_object"></p>
+      <p style="font-size: 22px;">Precisión:  </p>
+      <p id="number_precision"></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

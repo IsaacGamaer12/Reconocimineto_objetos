@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(rgb(61, 61, 246), rgb(193, 36, 240), rgb(115, 115, 223));
+}
+
+h1{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+p{
+    color: white;
+}
+
+label{
+    color: white;
+}
+
+button{
+    background-color:rgb(241, 50, 142);
+    color: white;
+    border-radius: 14%;
+}
+
+#camera{
+    border: 2px dashed black;
+    width: 300px;
+    height: 300px;
+}
